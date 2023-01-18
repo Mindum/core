@@ -18,7 +18,7 @@ public class BeanDefinitionTest {
 
             if(beanDefinition.getRole() == BeanDefinition.ROLE_APPLICATION){
                 System.out.println("beanDefinitionName = " + beanDefinitionName +
-                        "beanDefinition = " + beanDefinition);
+                        "beanDefinition = " + beanDefinition);//for문을 통해서 beanDifinitionName을 모두 찾는 방법
             }
         }
     }
