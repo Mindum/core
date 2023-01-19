@@ -7,7 +7,7 @@ import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class BeanDefinitionTest {
-    AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(AppConfig.class);
+    AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(AppConfig.class);//AppConfig에 있는 클래스를 이용 하는 ac
 
     @Test
     @DisplayName("빈 설정 메타정보 확인")
