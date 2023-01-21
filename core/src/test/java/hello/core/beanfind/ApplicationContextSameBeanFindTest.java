@@ -27,7 +27,7 @@ public class ApplicationContextSameBeanFindTest {
     void findBeanByTypeDuplication() {
         MemberRepository bean = ac.getBean(MemberRepository.class);
         assertThrows(NoUniqueBeanDefinitionException.class,
-                () -> ac.getBean(MemberRepository.class))
+                () -> ac.getBean(MemberRepository.class));
     }
 
     @Test
