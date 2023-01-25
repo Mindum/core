@@ -8,7 +8,6 @@ import org.junit.jupiter.api.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import static jdk.internal.org.jline.utils.Colors.M;
 
 public class ConfiguratuinSingletonTest {
 
@@ -18,7 +17,7 @@ public class ConfiguratuinSingletonTest {
 
         MemberServiceImpl memberService = ac.getBean("memberService", MemberServiceImpl.class);
         OrderServiceImpl orderService = ac.getBean("orderService", OrderServiceImpl.class);
-        MemberRepository memberRepository = ac.getBean("memberRepository",MemberRepository.class)
+        MemberRepository memberRepository = ac.getBean("memberRepository",MemberRepository.class);
 
         MemberRepository memberRepository1 = memberService.getMemberRepository();
 
