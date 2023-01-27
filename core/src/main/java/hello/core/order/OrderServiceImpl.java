@@ -22,11 +22,12 @@ public class OrderServiceImpl implements OrderService{
         this.memberRepository = memberRepository;
     }
 
-    @Autowired(required = false)
+    @Autowired(required = false)//required = false를 하면 디폴트값이 false로 변하게 된다.
     public void setDiscountPolicy(DiscountPolicy discountPolicy){
         System.out.println("discountPolicy = " + discountPolicy);
         this.discountPolicy = discountPolicy;
     }
+
 
 
     @Autowired
