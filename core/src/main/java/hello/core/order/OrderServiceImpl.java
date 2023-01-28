@@ -16,6 +16,7 @@ public class OrderServiceImpl implements OrderService{
 
 
     //Autowired는 요즘 안 쓰는 추세
+    //스프링자체에서 많은 부분들을 자동으로 해주기 때문에 특수한 경우가 아닐경우 수동은 사용 x
     @Autowired(required = false)
     public void setMemberRepository(MemberRepository memberRepository){
         System.out.println("memberRepository = " + memberRepository);
