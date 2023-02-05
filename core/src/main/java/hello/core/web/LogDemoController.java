@@ -27,6 +27,6 @@ public class LogDemoController {
 
         myLogger.log("controller test");
         logDemoService.logic("testId");
-        return "OK";//빌드 성공시 ok문자를 출력
+        return "OK";//빌드 성공시 ok문자를 출력하는거임
     }
 }
